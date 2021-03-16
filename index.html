@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>simple calculator</title>
+<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+<script>
+  window.TrackJS && TrackJS.install({ 
+    token: "0f035a391e194ffe87a06aa9b1a60bc4"
+    // for more configuration options, see https://docs.trackjs.com
+  });
+</script>
+<script src="function.js"></script>
+</head>
+<body>
+
+<h1>simple calculator</h1>
+<input id='input1'></input>
+<select id='option'>
+    <option>add</option>
+    <option>minus</option>
+    <option>times</option>
+    <option>divide</option>
+</select>
+<input id='input2'></input>
+<button onclick='cal()''>calculate</button>
+<p id='result'></p>
+
+<br></br>
+
+<button id='Console_log' onclick='consolelog()'>Console Log</button>
+<button id='Console_Error' onclick="consoleerror()">Console Error</button>
+<button id='Console_dir' onclick="consoledir()">Console Dir</button>
+<button id='Console_dirxml' onclick="consoledirxml()">Console dirxml</button>
+<button id='Console_group_start' onclick="consolegroupstart()">Console Group start</button>
+<button id='Console_group_end' onclick="consolegroupend()">Console Group End</button>
+<button id='Console_table' onclick="consoletable()">Console Table</button>
+<button id='start_timer' onclick="starttimer()">Start Timer</button>
+<button id='end_timer' onclick='stoptimer()'>End Timer</button>
+<button id='Console_trace' onclick="consoletrace()">Console Trace</button>
+<button id='trigger_global' onclick="globalerror()">Trigger a global Error</button>
+
+</body>
+</html>
